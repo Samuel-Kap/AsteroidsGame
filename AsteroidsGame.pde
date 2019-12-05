@@ -1,25 +1,39 @@
 Spaceship joe;
+Asteroid jeff;
 Star stuff[]= new Star[(int)(Math.random()*1000)];
+Asteroid pp[]= new Asteroid[(int)(Math.random()*10+10)];
 public void setup() 
 {
   for (int i=0; i<stuff.length; i++)
   {
     stuff[i] = new Star();
   }
-  background(60);
+  for (int i=0; i<pp.length; i++)
+  {
+    pp[i] = new Asteroid();
+  }
+  background(192);
   size(500,500);
+  jeff=new Asteroid();
   joe= new Spaceship();
 }
 public void draw() 
 {
-   fill(60);
+   fill(130);
   rect(0,0,500,500);
    for (int i=0; i<stuff.length; i++)
   {
     stuff[i].show();
   }
-  joe.show();
+  for (int i=0; i<pp.length; i++)
+  {
+    pp[i].move();
+    pp[i].show();
+  }
+  jeff.move();
+  jeff.show();
   joe.move();
+  joe.show();
 }
 public void keyPressed() {
   if (key == CODED) {

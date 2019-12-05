@@ -43,6 +43,15 @@ class Spaceship extends Floater
     rotate(dRadians);
     
     //draw the polygon
+    ///fill(192);
+    //fix this
+     //beginShape();
+   // vertex(2,1);
+      //vertex(1,1);
+     // vertex(1,-1);
+     // vertex(2,-1);
+   // endShape(CLOSE);
+  
     beginShape();
     for (int nI = 0; nI < corners; nI++)
     {
@@ -50,14 +59,14 @@ class Spaceship extends Floater
     }
     endShape(CLOSE);
     noStroke();
-    fill(255,0,0);
+    fill(0,0,200,1192);
     if (key == CODED) {
     if (keyCode == UP) {
        beginShape();
-    vertex(-2, 0);
-      vertex(-2, -1);
-      vertex(-5, 0);
-      vertex(-2, 1);
+    vertex(-1, 0);
+      vertex(-1, -1);
+      vertex(-8, 0);
+      vertex(-1, 1);
     endShape(CLOSE);
     }
     }
