@@ -28,6 +28,23 @@ class Spaceship extends Floater
     public void setMpD(int mPd){
       myPointDirection = mPd;
    }
+   
+      public  getDieX(){
+      return myCenterX ;
+   }
+    public  getDieY(){
+      return myCenterX ;
+   }
+    public  getCentX(){
+      return  ;
+   }
+    public  getCentY(){
+      return  ;
+   }
+    public  getMpD(){
+      return  ;
+   }
+   
    public void show ()  //Draws the floater at the current position  
   {             
     fill(myColor);   
